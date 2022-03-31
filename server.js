@@ -1,14 +1,15 @@
 const express = require('express')
-const { json } = require('express/lib/response')
 const app = express()
 const fetch = require("node-fetch")
 
-const port = 3000
+require('dotenv').config();
+
 app.use(express.json())
 
-const api_key = "AIzaSyBUB-Fm7iZw7KlhuHrlwPVZ43KCsL7cwns"
-const api_url = "https://maps.googleapis.com/maps/api/directions/json?"
+const port = 3000
 
+const api_key = process.env.API_KEY
+const api_url = "https://maps.googleapis.com/maps/api/directions/json?"
 
 
 /**
