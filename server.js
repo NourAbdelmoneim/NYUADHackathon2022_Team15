@@ -21,6 +21,7 @@ const api_url = "https://maps.googleapis.com/maps/api/directions/json?"
 const getDistacne = async (pointA , pointB) => {
     try {
         const res = await fetch(`${api_url}origin=${pointA.lat},${pointA.lng}&destination=${pointB.lat},${pointB.lng}&key=${api_key}`)
+        //console.log(`${api_url}origin=${pointA.lat},${pointA.lng}&destination=${pointB.lat},${pointB.lng}&key=${api_key}`)
         const jsonData = await res.json()
         
         return jsonData["routes"][0]["legs"][0]["duration"]["value"]
