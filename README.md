@@ -102,7 +102,7 @@ Quantum Computing Algorithms
 #### Hackers
 
 - Abdallah Saleh
-- Bhavica Mohta
+- Bhavicka Mohta
 - Nour Abdelmoneim 
 - Omar El Herraoui
 - Omar Aburish
